@@ -1,4 +1,8 @@
-#!/usr/bin/env python
+
+language: python
+
+python:
+  - "3.7"
 
 addons: # get google-chrome-stable
   chrome: stable
@@ -10,10 +14,7 @@ install: # Install ChromeDriver (64bits; replace 64 with 32 for 32bits).
   - sudo chmod +x /usr/local/share/chromedriver
   - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 
-  language: python
 
-python:
-  - "3.7"
 
 
 script:
