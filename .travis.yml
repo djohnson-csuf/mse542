@@ -14,10 +14,12 @@ install:
   - sudo chmod +x /usr/local/share/chromedriver
   - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
   - sudo -H pip install selenium
+  - sudo H pip install webcolors
 
 
 
 
-script:
-  - python -m pip install -U selenium
+script: # issues with Travis CI virtualenv required install and script for selenium and webcolors
+  - python -m pip install -U selenium 
+  - python -m pip install -U webcolors
   - python colored_square_game_se_tests.py
