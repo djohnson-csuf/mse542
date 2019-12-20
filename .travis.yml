@@ -4,9 +4,9 @@ language: python
 python:
   - "3.7"
 
-addons: # get google-chrome-stable
+addons: 
   chrome: stable
-install: # Install ChromeDriver (64bits; replace 64 with 32 for 32bits).
+install: 
   - wget -N http://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip -P ~/
   - unzip ~/chromedriver_linux64.zip -d ~/
   - rm ~/chromedriver_linux64.zip
@@ -19,4 +19,5 @@ install: # Install ChromeDriver (64bits; replace 64 with 32 for 32bits).
 
 
 script:
+  - python -m pip install -U selenium
   - python colored_square_game_se_tests.py
