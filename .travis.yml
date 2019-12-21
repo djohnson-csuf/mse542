@@ -19,7 +19,3 @@ install:
 
 
 
-script: # issues with Travis CI virtualenv required install and script for selenium and webcolors
-  - python -m pip install -U selenium 
-  - python -m pip install -U webcolors
-  - python colored_square_game_se_tests.py
