@@ -19,3 +19,5 @@ install:
 
 
 
+script: # issues with Travis CI virtualenv required install and script for selenium and webcolors
+  - tests.py
